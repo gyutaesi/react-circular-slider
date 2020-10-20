@@ -1,6 +1,6 @@
 {
   "name": "react-circular-slider-hme",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "description": "A customizable circular slider with no dependencies.",
   "main": "index.js",
   "repository": {

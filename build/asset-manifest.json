@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/react-circular-slider/static/css/main.7c6fb68e.chunk.css",
-    "main.js": "/react-circular-slider/static/js/main.e5358021.chunk.js",
-    "main.js.map": "/react-circular-slider/static/js/main.e5358021.chunk.js.map",
-    "runtime-main.js": "/react-circular-slider/static/js/runtime-main.f63acd1c.js",
-    "runtime-main.js.map": "/react-circular-slider/static/js/runtime-main.f63acd1c.js.map",
-    "static/js/2.03da5cd2.chunk.js": "/react-circular-slider/static/js/2.03da5cd2.chunk.js",
-    "static/js/2.03da5cd2.chunk.js.map": "/react-circular-slider/static/js/2.03da5cd2.chunk.js.map",
+    "main.js": "/react-circular-slider/static/js/main.22c6eb30.chunk.js",
+    "main.js.map": "/react-circular-slider/static/js/main.22c6eb30.chunk.js.map",
+    "runtime-main.js": "/react-circular-slider/static/js/runtime-main.a71fabe4.js",
+    "runtime-main.js.map": "/react-circular-slider/static/js/runtime-main.a71fabe4.js.map",
+    "static/js/2.0465a1cb.chunk.js": "/react-circular-slider/static/js/2.0465a1cb.chunk.js",
+    "static/js/2.0465a1cb.chunk.js.map": "/react-circular-slider/static/js/2.0465a1cb.chunk.js.map",
     "index.html": "/react-circular-slider/index.html",
-    "precache-manifest.e151183b7f27639515dba3890ca58320.js": "/react-circular-slider/precache-manifest.e151183b7f27639515dba3890ca58320.js",
+    "precache-manifest.be7fa88b564b0e3d672992716d657350.js": "/react-circular-slider/precache-manifest.be7fa88b564b0e3d672992716d657350.js",
     "service-worker.js": "/react-circular-slider/service-worker.js",
     "static/css/main.7c6fb68e.chunk.css.map": "/react-circular-slider/static/css/main.7c6fb68e.chunk.css.map",
-    "static/js/2.03da5cd2.chunk.js.LICENSE.txt": "/react-circular-slider/static/js/2.03da5cd2.chunk.js.LICENSE.txt",
+    "static/js/2.0465a1cb.chunk.js.LICENSE.txt": "/react-circular-slider/static/js/2.0465a1cb.chunk.js.LICENSE.txt",
     "static/media/drag.3f95288c.svg": "/react-circular-slider/static/media/drag.3f95288c.svg",
     "static/media/emoji.8c505251.svg": "/react-circular-slider/static/media/emoji.8c505251.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f63acd1c.js",
-    "static/js/2.03da5cd2.chunk.js",
+    "static/js/runtime-main.a71fabe4.js",
+    "static/js/2.0465a1cb.chunk.js",
     "static/css/main.7c6fb68e.chunk.css",
-    "static/js/main.e5358021.chunk.js"
+    "static/js/main.22c6eb30.chunk.js"
   ]
 }
