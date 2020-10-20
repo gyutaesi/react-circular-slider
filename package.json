@@ -1,11 +1,11 @@
 {
-  "name": "@fseehawer/react-circular-slider",
+  "name": "react-circular-slider-hme",
   "version": "2.3.5",
   "description": "A customizable circular slider with no dependencies.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fseehawer/react-circular-slider.git"
+    "url": "git+https://github.com/gyutaesi/react-circular-slider.git"
   },
   "keywords": [
     "react slider",
@@ -22,9 +22,9 @@
   "author": "Fidel Seehawer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fseehawer/react-circular-slider/issues"
+    "url": "https://github.com/gyutaesi/react-circular-slider/issues"
   },
-  "homepage": "https://fseehawer.github.io/react-circular-slider/",
+  "homepage": "https://gyutaesi.github.io/react-circular-slider/",
   "peerDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

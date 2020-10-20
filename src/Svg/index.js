@@ -15,6 +15,7 @@ const Svg = ({
          svgFullPath,
          radiansOffset,
          progressLineCap,
+         onClick
      }) => {
 
     const styles = ({
@@ -38,7 +39,8 @@ const Svg = ({
             height={`${width}px`}
             viewBox={`0 0 ${width} ${width}`}
             overflow="visible"
-            style={styles.svg}
+            style={{...styles.svg, cursor: onClick && 'pointer'}}
+            onClick={onClick}
         >
             <defs>
                 <linearGradient id={label} x1="100%" x2="0%">
@@ -87,6 +89,7 @@ Svg.propTypes = {
     trackColor: PropTypes.string,
     trackSize: PropTypes.number,
     radiansOffset: PropTypes.number,
+    onClick: PropTypes.func
 };
 
 export default Svg;

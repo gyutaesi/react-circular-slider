@@ -76,6 +76,11 @@ const CircularSlider = ({
         renderLabelValue = null,
         children,
         onChange = value => {},
+        clickAble = false,
+        showButton = false,
+        onClick = value => {},
+        onPlusBtn = () => {},
+        onMinusBtn = () => {}
     }) => {
     const initialState = {
         mounted: false,
@@ -241,6 +246,7 @@ const CircularSlider = ({
                 trackColor={trackColor}
                 trackSize={trackSize}
                 radiansOffset={state.radians}
+                onClick={clickAble && onClick}
             />
             {knobDraggable && (
                 <Knob
@@ -268,6 +274,12 @@ const CircularSlider = ({
                     hideLabelValue={hideLabelValue}
                     value={`${state.label}`}
                 />
+            )}
+            {showButton && (
+                <div>
+                    <button onClick={onMinusBtn}>-</button>
+                    <button onClick={onPlusBtn}>+</button>
+                </div>
             )}
         </div>
     );
@@ -300,7 +312,12 @@ CircularSlider.propTypes = {
     trackSize: PropTypes.number,
     data: PropTypes.array,
     dataIndex: PropTypes.number,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    clickAble: PropTypes.bool,
+    showButton: PropTypes.bool,
+    onPlusBtn: PropTypes.func,
+    onMinusBtn: PropTypes.func,
+    onClick: PropTypes.func
 };
 
 export default CircularSlider;
