@@ -37,8 +37,7 @@ const styles = ({
     circularSlider: {
         position: 'relative',
         display: 'inline-block',
-        opacity: 0,
-        transition: 'opacity 1s ease-in'
+        opacity: 0
     },
 
     mounted: {
@@ -78,9 +77,7 @@ const CircularSlider = ({
         onChange = value => {},
         clickAble = false,
         showButton = false,
-        onClick = value => {},
-        onPlusBtn = () => {},
-        onMinusBtn = () => {}
+        onClick = value => {}
     }) => {
     const initialState = {
         mounted: false,
@@ -211,6 +208,8 @@ const CircularSlider = ({
                 type: 'setInitialKnobPosition',
                 payload: {
                     radians: Math.PI / 2 - knobOffset[state.knobPosition],
+                    width: width,
+                    radius: width / 2,
                     offset
                 }
             });
@@ -225,7 +224,7 @@ const CircularSlider = ({
         }
 
         // eslint-disable-next-line
-    }, [state.dashFullArray, state.knobPosition, state.data.length, dataIndex, direction]);
+    }, [state.dashFullArray, state.knobPosition, state.data.length, dataIndex, direction, width]);
 
     useEventListener(SLIDER_EVENT.MOVE, onMouseMove);
     useEventListener(SLIDER_EVENT.UP, onMouseUp);
@@ -275,12 +274,6 @@ const CircularSlider = ({
                     value={`${state.label}`}
                 />
             )}
-            {showButton && (
-                <div>
-                    <button onClick={onMinusBtn}>-</button>
-                    <button onClick={onPlusBtn}>+</button>
-                </div>
-            )}
         </div>
     );
 };
@@ -314,9 +307,6 @@ CircularSlider.propTypes = {
     dataIndex: PropTypes.number,
     onChange: PropTypes.func,
     clickAble: PropTypes.bool,
-    showButton: PropTypes.bool,
-    onPlusBtn: PropTypes.func,
-    onMinusBtn: PropTypes.func,
     onClick: PropTypes.func
 };
 
