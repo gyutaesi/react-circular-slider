@@ -1,11 +1,11 @@
 {
   "name": "react-circular-slider-hme",
-  "version": "2.3.7",
+  "version": "1.0.0",
   "description": "A customizable circular slider with no dependencies.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gyutaesi/react-circular-slider.git"
+    "url": "https://github.com/gyutaesi/react-circular-slider.git"
   },
   "keywords": [
     "react slider",
