@@ -41,8 +41,8 @@ const Svg = ({
             viewBox={`0 0 ${width} ${width}`}
             overflow="visible"
             style={{...styles.svg, cursor: onClick && 'pointer'}}
-            onMouseDown={!touchSupported && onClick}
-            onTouchStart={touchSupported && onClick}
+            onMouseDown={touchSupported ? undefined : onClick}
+            onTouchStart={touchSupported ? onClick : undefined}
         >
             <defs>
                 <linearGradient id={label} x1="100%" x2="0%">
