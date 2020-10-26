@@ -32,6 +32,7 @@ const Svg = ({
 
     const halfTrack = trackSize / 2;
     const radius = width / 2 - halfTrack;
+    const touchSupported = 'ontouchstart' in window;
 
     return (
         <svg
@@ -40,7 +41,8 @@ const Svg = ({
             viewBox={`0 0 ${width} ${width}`}
             overflow="visible"
             style={{...styles.svg, cursor: onClick && 'pointer'}}
-            onMouseDown={onClick}
+            onMouseDown={!touchSupported && onClick}
+            onTouchStart={touchSupported && onClick}
         >
             <defs>
                 <linearGradient id={label} x1="100%" x2="0%">
